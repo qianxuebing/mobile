@@ -1,0 +1,50 @@
+@charset "utf-8";
+html {
+	font-size: calc(100vw/7.5);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.top {
+	height: 0.87rem;
+	line-height: 0.87rem;
+	background-image: linear-gradient(to bottom, #fff, #f0f0f0);
+	border-bottom: 1px solid #ccc;
+	font-size: 0.3rem;
+}
+.top>span.fa{
+	display: inline-block;
+	font-size: 0.4rem;
+	line-height: 0.87rem;
+	margin-left: 0.3rem;
+	cursor: pointer;
+}
+.top>p.word{
+	padding: 0 2.15rem;
+}
+.top>span.right{
+	margin-right: 0.2rem;
+}
