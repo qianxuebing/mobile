@@ -7,13 +7,13 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	font-family: "微软雅黑";
 }
 
-p {
+p,dl,div{
 	margin: 0;
 	padding: 0;
 }
-
 .left {
 	float: left;
 }
@@ -43,8 +43,65 @@ p {
 	cursor: pointer;
 }
 .top>p.word{
-	padding: 0 2.15rem;
+	margin-left: 2.26rem;
 }
 .top>span.right{
 	margin-right: 0.2rem;
+	line-height: 0.87rem;
+}
+.payOver{
+	margin-top: 0.7rem;
+}
+.payOver>dl>dt{
+	height: 1.26rem;
+	margin-left: 0.92rem;
+	
+}
+.payOver>dl>dt>img{
+	height: 1.26rem;
+}
+.payOver>dl>dd{
+	float: left;
+	font-size: 0.26rem;
+	line-height: 0.45rem;
+}
+.payOver>dl>dd>span{
+	color: #f2271e;
+}
+.menu{
+	margin-top: 0.7rem;
+}
+.menu .btn{
+	width: 5.34rem;
+	height: 0.7rem;
+	background-color: #fff;
+	font-size: 0.26rem;
+	border: solid 1px #474646;
+	border-radius: 0.1rem;
+	margin-left: 1.05rem;
+}
+.menu .btn1{
+	margin-top: 0.2rem;
+	border-color: #f01010;
+	color: #fff;
+	background-color: #f23030;
+}
+p.warn{
+	margin-top: 0.54rem;
+	font-size: 0.24rem;
+	color: #87818c;
+	padding: 0 0.52rem;
+	line-height: 0.32rem;
+}
+.image{
+	margin-top: 0.24rem;
+	width: 7.5rem;
+	height: 2.15rem;
+	background-color: #f0f2f5;
+	border-top: solid 1px #e1e1e0;
+}
+.image>a>img{
+	width: 7.5rem;
+	height: 2rem;
+	margin-top: 0.15rem;
 }
