@@ -184,7 +184,7 @@ p.warn{
 	margin-top: 0.6rem;
 }
 
-.goods>dl>a>img{
+.goods>dl>dt>a>img{
 	height: 1.75rem;
 }
 .goods>dl>dd{
@@ -231,7 +231,80 @@ p.del{
 	text-align: right;
 	margin-top: 0.22rem;
 	color: #e2e2e2;
+	padding-bottom:0.1rem ;
+	
 }
 p.del>a{
 	font-size: 0.22rem;
+}
+.more{
+	font-size: 0.24rem;
+	margin-top: 0.3rem;
+	text-align: center;
+	font-size: 0.24rem;
+}
+.more>img{
+	width: 0.28rem;
+	margin-right: 0.12rem;
+	vertical-align: middle;
+}
+.other{
+	margin-top: 0.34rem;
+}
+.other>dl{
+	width: 3.6rem;
+	background-color: #fff;
+}
+.other>dl>dt>a>img{
+	width: 3.5rem;
+}
+.other>dl>dd{
+	font-size: 0.24rem;
+	padding: 0 0.12rem;
+}
+.other>dl>dd.price1{
+	margin-top: 0.24rem;
+	font-size: 0.26rem;
+	color: #f00000;
+}
+.other>dl>dd.price1>span{
+	color: #5c5d64;
+	font-size: 0.18rem;
+}
+.account{
+	margin-top: 0.01rem;
+	background-color: #fff;
+	font-size: 0.24rem;
+	height: 0.98rem;
+	/*line-height: 0.98rem;*/
+	font-weight: bold;
+}
+
+.account .all{
+	line-height: 0.98rem;
+	margin-right: 0.2rem;
+}
+.account .all>img{
+	width: 0.36rem;
+	vertical-align: middle;
+	margin: 0 0.12rem 0 0.32rem;
+}
+.account .money>p{
+	line-height: 0.36rem;
+}
+.account .money>p.allmoney{
+	margin-top: 0.2rem;
+}
+.account .money>p.total{
+	font-size: 0.18rem;
+	font-weight: normal;
+}
+.num{
+	padding: 0 0.32rem;
+	line-height: 0.98rem;
+	background-color: #f23030;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: normal;
+	
 }
