@@ -28,14 +28,15 @@ p,dl,div{
 	clear: both;
 }
 
-.top {
+
+.top,.header{
 	height: 0.87rem;
 	line-height: 0.87rem;
 	background-image: linear-gradient(to bottom, #fff, #f0f0f0);
 	border-bottom: 1px solid #ccc;
 	font-size: 0.3rem;
 }
-.top>span.fa{
+.top>span.fa,.header>span.fa{
 	display: inline-block;
 	font-size: 0.4rem;
 	line-height: 0.87rem;
@@ -104,4 +105,84 @@ p.warn{
 	width: 7.5rem;
 	height: 2rem;
 	margin-top: 0.15rem;
+}
+/*pay end*/
+
+/*shoppingCart  start*/
+.header>p{
+	margin-left: 2.73rem;
+}
+.header>span.right{
+	margin-right: 0.2rem;
+	line-height: 0.87rem;
+}
+.safe{
+	height: 0.68rem;
+	line-height: 0.68rem;
+	background-color: #fff;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #4e5255;
+}
+.safe>img{
+	margin-right: 0.14rem;
+}
+.shopping{
+	width: 7.26rem;
+	background-color: #fff;
+	margin-left: 0.12rem;
+	margin-top: 0.2rem;
+	font-size: 0.26rem;
+	color: #4e5255;
+}
+.shopping .shop{
+	padding-top: 0.3rem;
+}
+.shopping .shop>img{
+	width: 0.32rem;
+	margin-left: 0.2rem;
+}
+.shopping .shop>span.fa{
+	font-size: 0.3rem;
+	display: inline-block;
+	margin-left: 0.14rem;
+}
+.shopping>p{
+	margin-top: 0.56rem;
+	line-height: 0.34rem;
+}
+.shopping>p>img{
+	width: 0.56rem;
+	margin-left: 0.12rem;
+	margin-right: 0.14rem;
+	vertical-align: middle;
+}
+.shopping>p>span{
+	color: #f23b24;
+}
+.shopping>p>span>i.fa{
+	display: inline-block;
+	margin-left: 0.14rem;
+	margin-right: 0.2rem;
+	color: #f23b24;
+}
+.goods{
+	margin-top: 0.22rem;
+}
+.goods>img{
+	margin-left: 0.2rem;
+	width: 0.36rem;
+	margin-right: 0.24rem;
+	margin-top: 0.6rem;
+}
+
+.goods>dl>a>img{
+	height: 1.75rem;
+}
+.goods>dl>dt{
+	margin-right: 0.12rem;
+}
+.goods>dl>dd.color{
+	font-size: 0.2rem;
+	width: ;
 }
