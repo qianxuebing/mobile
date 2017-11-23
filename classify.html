@@ -1127,43 +1127,6 @@
 				startY = y;
 			}
 
-			slideR.ontouchstart = function(e) {
-				startY = e.touches[0].pageY;
-
-			}
-
-			slideR.ontouchmove = function(e) {
-				var y = e.touches[0].pageY;
-				var t = topOffset + y - startY;
-
-				if(t < ($(".rightlist").height() - $(".top").height() - $(".list1").height() - 150)) {
-					t = $(".rightlist").height() - $(".top").height() - $(".list1").height() - 150;
-				}
-				t = t > 150 ? 150 : t;
-				ul2.style.top = t + "px";
-			}
-
-			slideR.ontouchend = function(e) {
-				var y = e.changedTouches[0].pageY;
-				var t = topOffset + y - startY;
-				var h = $(".rightlist").height() - $(".top").height() - ($(".list1").height() + t);
-
-				if(t > 0) {
-					$(".list1").animate({
-						top: "0px"
-					}, 300);
-					t = 0;
-				}
-				if(h > 0) {
-					t = $(".rightlist").height() - $(".top").height() - $(".list1").height();
-					$(".list1").animate({
-						top: t + "px"
-					}, 300);
-
-				}
-				topOffset = t;
-				startY = y;
-			}
 			$(".leftlist ul li").on({
 				touchstart: function() {
 				$(".leftlist ul li").removeClass("active");
