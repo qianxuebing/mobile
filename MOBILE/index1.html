@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+		<script src="JS/rem.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				background-image: url(image/bg_02.jpg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<img src="image/logo.png" >
+		</div>
+		<hr class="line" />
+		<div class="evaluate-wrap">
+			<p class="evaluate-tilte">评价本次服务</p>
+			<div class="star">
+				<span class="un_check"></span>
+				<span class="un_check"></span>
+				<span class="un_check"></span>
+				<span class="un_check"></span>
+				<span class="un_check"></span>
+			</div>
+			<p class="evaluate">* 5星为最满意，1星为最不满意</p>
+		</div>
+		<div class="aspect">
+			<p class="aspect-title">满意的方面</p>
+			<div class="aspect-wrap">
+				<ul class="items">
+					<li class="active">专业热情的客服</li>			
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+					<li>专业热情的客服</li>
+				</ul>			
+				<div class="other-opinion">
+					<!-- <p class="opinion-title">其 他 意 见</p> -->
+					<textarea rows="3" cols="" placeholder="其他意见..."></textarea>
+				</div>
+			</div>
+			
+		</div>
+		<div class="btn-wrap">
+			<div class="bg"></div>
+			<div class="btn-wrapper">
+				<button type="button" class="btn-confirm">确 认</button>
+			</div>			
+		</div>
+		
+		
+		<script src="JS/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="JS/jquery-3.2.1.min.js"></script>	
+		<script type="text/javascript">
+			//选择星星 
+			for(var i=0;i<$(".star span").length; i++){
+				$(".star span").eq(i).on("touchstart",function(e){
+					e.preventDefault();
+					$(this).addClass("checked").removeClass("un_check").prevAll("span").addClass("checked").removeClass("un_check");
+					$(this).nextAll("span").removeClass("checked").addClass("un_check");
+				})
+			}
+			
+			//多选 
+			for (var i=0; i<$(".items li").length; i++) {
+				$(".items li").eq(i).on("touchstart",function(e){
+					e.preventDefault();
+					if ($(this).hasClass("active")) {
+						$(this).removeClass("active");
+					} else{
+						$(this).addClass("active");
+					}
+				})
+			}
+				
+			$(".btn-confirm").on("touchstart",function(e){
+				e.preventDefault();
+				window.location.href = 'index2.html';
+			})
+			
+		</script>
+		
+	</body>
+</html>
